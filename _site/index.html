@@ -13,28 +13,57 @@
   <link rel="alternate" type="application/rss+xml" title="Ghost Ink Tattoo Kits" href="http://localhost:4000 /feed.xml ">
 
   <!-- Google Verification
-    	============================================= -->
+  ============================================= -->
+      
+  <!-- Fonts
+  ============================================= -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
   <!-- Icons
-  	============================================= -->
+  ============================================= -->
 
   <!-- Stylesheets
   ============================================= -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <style>
     html {
-      font-family: sans-serif;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
+      background: url(images/landing-page-bg.jpg) no-repeat center center fixed;
+      background-size: cover;
     }
     body, a {
-      background-color: black;
-      color: white;
+      color: #c3c3c3;
       text-decoration: none;
+      background-color: transparent;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+      color: #c3c3c3;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      color: #C8A22D;
+      -webkit-text-fill-color: transparent;
+      background: -webkit-linear-gradient(transparent, transparent), url(/images/pattern-gold-shadows.jpg) repeat;
+      background: -o-linear-gradient(transparent, transparent);
+      -webkit-background-clip: text;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
     }
     .logo {
-      width: 50%;
+      width: 410px;
       margin: 100px auto;
       text-align: center;
+    }
+    .ea-signup {
+      margin-top: 100px;
+    }
+    input::-webkit-input-placeholder {
+      color: #fff;
+      text-align: center;
+    }
+    input {
+      text-align: center;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,.39);
+      background-color: rgba(255, 255, 255, 0.05) !important;
     }
   </style>
 
@@ -62,10 +91,10 @@
 
     <!-- Header
 		============================================= -->
-        <header id="header">
+    <header id="header">
 
-      <div class="logo">
-        <?xml version="1.0" encoding="UTF-8"?>
+  <div class="logo">
+    <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 269 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <title>Ghost Script Logo</title>
@@ -91,11 +120,24 @@
         <path d="M81,50.77801 C80.6069721,50.6131356 80.4739626,51.0508022 80.282949,51.3165997 C76.935711,55.9380797 73.4684645,60.5006045 70.7462709,65.513786 C68.8081331,69.0830674 67.1080122,72.8222194 64.7498445,76.1047192 C59.2144509,83.8158458 56.3082442,92.8369745 51.9949375,101.149643 C49.8747868,105.235531 48.0546573,109.619192 46.5995539,114.095782 C45.9105049,116.21217 44.6034119,118.180671 43.7453509,120.302055 C43.4003264,121.158403 43.4843324,122.175628 42.74828,123 C41.5281933,121.836886 41.2551738,120.545869 41.7532093,119.020031 C42.7212781,116.05529 44.0103698,113.150502 44.3413933,110.039871 C44.9344355,104.476109 46.4175409,99.0862146 47.3256055,93.5854045 C47.8406421,90.4727753 49.0187259,87.4690632 49.9157897,84.4223838 C50.1128037,83.7598884 50.4938308,83.1423587 50.1338052,82.2570331 C48.4616863,84.720157 46.7745663,87.1742877 45.1204487,89.6514009 C43.3163204,92.3553414 42.5782679,95.5848815 40.7081349,98.3038106 C39.4340444,100.158398 37.7539249,101.276546 35.9787987,102.394695 C34.8947216,103.077175 33.7316389,103.633751 32.6015585,104.242287 C32.2545338,104.428146 31.9075092,104.578032 31.4844791,104.521075 C28.6622784,104.139366 25.914083,101.558332 25.4040467,98.6655351 C25.1630296,97.3025732 24.9980178,95.9066364 25.000018,94.524689 C25.0080186,89.7063591 26.1470996,85.0778845 27.3011816,80.4234297 C28.2902519,76.4324695 29.8783649,72.7103046 31.5734854,69.0221138 C32.9395825,66.0503773 35.1227378,63.6412123 37.4139007,61.3189811 C39.4530457,59.2495574 41.3651817,57.052231 43.2893185,54.872891 C45.3714665,52.5146872 47.867644,50.6181318 50.2468132,48.5966715 C52.1189463,47.0058831 54.1210887,45.6089471 55.5491903,43.5115447 C56.3432467,42.3454329 57.5263308,41.2862397 59.2494534,42.0686437 C59.8244943,42.3294451 60.0405096,41.8298256 60.3455313,41.5340509 C60.8775691,41.0184436 61.4366089,40.8255905 62.1656607,41.1823188 C63.4667533,41.8198332 64.6958407,44.403865 64.6998409,45.8787416 C64.7048413,47.9101943 64.3808183,49.8257353 62.4166786,50.661099 C60.7295586,51.3785526 59.4334665,52.488707 58.0643691,53.588869 C57.4663266,54.0705022 56.7872783,53.8166955 56.1512331,53.5389071 C55.0421542,53.0562747 54.0470834,53.1961681 52.9980089,53.8616612 C48.4456851,56.7504609 44.5824104,60.4956083 41.4421871,64.7343797 C39.5820549,67.2444678 38.9670111,70.7218192 37.9889416,73.8254552 C36.9148652,77.2318606 36.0558041,80.7072135 35.1307384,84.1605832 C34.9307241,84.9100123 34.7517114,85.6894187 34.7387105,86.4578334 C34.7217093,87.5539985 33.9986579,88.8999733 35.2597475,89.6723849 C36.9548681,90.7105942 38.7599964,90.362859 40.0500882,88.8749923 C41.5541951,87.1413128 43.1263069,85.4406082 44.4113983,83.5520467 C46.601554,80.3324989 49.4097537,77.5266361 50.9628641,73.8794141 C52.2029523,70.967632 54.3041017,68.667384 56.1692343,66.166289 C57.7803489,64.0069338 58.8964283,61.468867 60.8995707,59.5513275 C61.2665968,59.2005947 61.578619,58.7929052 62.0646536,58.6240338 C62.7697037,58.3802195 63.2217358,58.252317 63.3467447,59.4014417 C63.6397656,62.0973882 61.916643,63.9569718 60.7335589,65.9474557 C59.1144438,68.671381 58.1003717,71.6091433 56.9752917,74.5109331 C54.0440832,82.0671777 53.0760144,90.2069778 50.1678076,97.7762124 C50.1148038,97.9151066 50.1768082,98.0979674 50.1988098,98.5136507 C51.2588852,97.1406965 51.9099315,95.7757362 52.5699784,94.4237659 C56.3632481,86.6386956 60.1335162,78.8136558 64.6358364,71.4352758 C69.0981537,64.120847 73.9274971,57.0002706 79.3538829,50.3153624" id="Fill-79" fill="#FFFFFE"></path>
     </g>
 </svg>
-        <br>
-        <a href="mailto:bryan@weareghost.ink">bryan@weareghost.ink</a>
-      </div>
-    
-    </header>
+    <h4>Simple custom kits delivered to you</h4>
+
+    <div class="ea-signup">
+      <p>Request invite to get exclusive early access</p>
+
+      <form name="beta-signup" netlify>
+        <div class="input-group mb-3">
+          <input type="email" name="email" class="form-control" placeholder="Enter your email">
+          <div class="input-group-append">
+            <button class="btn btn-outline-light" type="submit">Send</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+</header>
     <!-- #header end -->
 
     <!-- Content
@@ -117,7 +159,10 @@
 	============================================= -->
 
   <!-- External JavaScripts
-	============================================= -->
+  ============================================= -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>  
 
   <!-- Footer Scripts
 	============================================= -->

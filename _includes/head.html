@@ -9,28 +9,57 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}">
 
   <!-- Google Verification
-    	============================================= -->
+  ============================================= -->
+      
+  <!-- Fonts
+  ============================================= -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
   <!-- Icons
-  	============================================= -->
+  ============================================= -->
 
   <!-- Stylesheets
   ============================================= -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <style>
     html {
-      font-family: sans-serif;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
+      background: url(images/landing-page-bg.jpg) no-repeat center center fixed;
+      background-size: cover;
     }
     body, a {
-      background-color: black;
-      color: white;
+      color: #c3c3c3;
       text-decoration: none;
+      background-color: transparent;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+      color: #c3c3c3;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      color: #C8A22D;
+      -webkit-text-fill-color: transparent;
+      background: -webkit-linear-gradient(transparent, transparent), url(/images/pattern-gold-shadows.jpg) repeat;
+      background: -o-linear-gradient(transparent, transparent);
+      -webkit-background-clip: text;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
     }
     .logo {
-      width: 50%;
+      width: 410px;
       margin: 100px auto;
       text-align: center;
+    }
+    .ea-signup {
+      margin-top: 100px;
+    }
+    input::-webkit-input-placeholder {
+      color: #fff;
+      text-align: center;
+    }
+    input {
+      text-align: center;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,.39);
+      background-color: rgba(255, 255, 255, 0.05) !important;
     }
   </style>
 
